@@ -1,0 +1,9 @@
+---
+- name: test lookup
+  become: true
+  hosts: all  
+  
+  tasks:
+   - name: lookups file
+     debug: msg:"l'adresse ip local est {{ lookup('file', 'localfacts.txt') }}"
+     

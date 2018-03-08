@@ -1,0 +1,19 @@
+total 68
+-rw-r--r--. 1 frank frank 580 Mar  5 09:13 anshost.ini
+-rw-rw-r--. 1 frank frank 292 Mar  5 12:52 filter1.yml
+-rw-rw-r--. 1 frank frank 425 Mar  5 13:44 filter2.yml
+-rw-rw-r--. 1 frank frank 443 Mar  5 13:54 filter3.yml
+-rw-rw-r--. 1 frank frank 365 Mar  5 14:01 filter4.yml
+-rw-rw-r--. 1 frank frank 145 Mar  5 14:09 filter5.yml
+-rw-rw-r--. 1 frank frank 145 Mar  5 14:33 filter6.yml
+-rw-rw-r--. 1 frank frank 753 Mar  5 15:11 filter7.yml
+-rw-rw-r--. 1 frank frank 263 Mar  5 09:19 ipdistant.yml
+-rw-rw-r--. 1 frank frank 240 Mar  5 16:12 ipv4prop.yml
+-rw-rw-r--. 1 frank frank 237 Mar  5 08:59 localfact.yml
+-rw-rw-r--. 1 frank frank  53 Mar  2 15:45 section.fact
+-rw-rw-r--. 1 frank frank   0 Mar  6 08:13 toto.txt
+-rw-rw-r--. 1 frank frank 313 Mar  5 15:52 update1.yml
+-rw-rw-r--. 1 frank frank 313 Mar  5 15:59 update2.yml
+-rw-rw-r--. 1 frank frank 276 Mar  2 14:34 vardico.yml
+-rw-rw-r--. 1 frank frank  77 Mar  2 13:29 variables.yml
+-rw-rw-r--. 1 frank frank 186 Mar  2 13:58 whoami.yml

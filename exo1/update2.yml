@@ -1,0 +1,16 @@
+---
+- name: affiche un hello en fonction des paramètres d'entrés
+  hosts: france
+  become: true
+  
+  tasks:
+   - name: mise à jour centos
+     yum:
+       update_cache=yes
+       name=*
+       state=latest
+     when:
+      - ansible_distribution == 'CentOS'
+      - ansible_distribution_major_version >= '7'
+
+

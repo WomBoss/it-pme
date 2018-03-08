@@ -1,0 +1,13 @@
+---
+
+ - hosts: front2
+   become: true
+   
+   tasks:
+   - name: Create Folder
+        file:
+        path: /busapps/dcvt/1.0
+        owner: frank
+        group: frank
+        mode: 0755
+        state: directory  

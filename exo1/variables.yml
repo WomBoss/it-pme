@@ -1,0 +1,15 @@
+---
+- name: test fichier variables
+  hosts: france
+  become: true
+ 
+  tasks:
+  - name: diplay ip address
+    debug: msg="{{hostvars['front1'].ansible_eth0.ipv4.address}}"
+
+  - name: diplay variable current hosts
+    debug: msg="{{hostvars[inventory_hostname]}}"
+
+  - name: arret des services httpd
+    service: httpd
+    state: reloaded

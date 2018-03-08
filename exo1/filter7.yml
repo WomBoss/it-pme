@@ -1,0 +1,19 @@
+---
+- name: affiche un hello en fonction des paramètres d'entrés
+  hosts: france
+  become_method: sudo
+  
+  tasks:
+   
+   - Name: one
+     debug: msg={{ 'Ansible is a great Infrastructure as Code solution.' | regex_search('(Infrastructure)') }} 
+   - Name: two
+     debug: msg={{ 'Ansible is a great Infrastructure as Code solution.' | regex_search('(Chef)') }}
+   - Name: three
+     debug: msg={{ 'Ansible is a great Infrastructure as Code solution. Ansible is owned by Red Hat.' | regex_findall('(Ansible)') }}
+   - Name: four
+     debug: msg={{ 'foobar' | regex_replace('^f.*o(.*)$', 'I drink a beer in a \\1') }}
+   - Name: five
+     debug: msg={{ 'localhost 80' | regex_replace('^(?P<host>.+) (?P<port>\\d+)$', 'http://\\g<host>:\\g<port>') }}
+
+

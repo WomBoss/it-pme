@@ -1,0 +1,12 @@
+---
+- name: variable test 
+  hosts: frontgroup
+  tasks:
+  - name: whoami
+    command: whoami
+    register: login  
+  - name: affiche le resultat dans une variable 
+    debug: var=login
+  - name: Affiche les adresses ip
+    debug: msg={{ ansible_eth0["ipv4"]["address"] }}
+   

@@ -1,0 +1,11 @@
+---
+- name: menage  
+  hosts: front1
+  become_method: sudo
+  tasks:
+  - name: Clean all packages
+     command: toto.bat
+#yum clean all && yum makecache
+     register: result
+     debug: var= result
+     failed_when: result.stderr == FAILED

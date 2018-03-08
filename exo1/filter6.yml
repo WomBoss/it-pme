@@ -1,0 +1,8 @@
+---
+- name: affiche un hello en fonction des paramètres d'entrés
+  hosts: france
+  become_method: sudo
+  
+  tasks:
+   - debug: msg={basename}
+

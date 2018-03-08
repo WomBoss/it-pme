@@ -1,0 +1,19 @@
+---
+- name: affiche un hello en fonction des paramètres d'entrés
+  hosts: france
+  become_method: sudo
+ 
+  tasks:
+ 
+  - name: lance le programe
+    command: ~/exo1/prog
+    register: result
+    ignore_errors: true
+    
+  - debug: var=result
+    
+  - debug: msg="fail if prog failled"
+    failed_when: result | failed
+    
+  - name: This message should not be displayed
+    debug: msg="This message should not be diplayed."

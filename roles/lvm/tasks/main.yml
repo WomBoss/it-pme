@@ -1,0 +1,136 @@
+---
+  - name: create volume group
+    lvg:
+      vg: vg1
+      pvs: /dev/sdc
+              
+  - name: lv1 for root
+    lvol:
+      vg: vg1
+      lv: lv1
+      size: 1G
+
+  - name: lv2 for DCVTGBLA
+    lvol:
+      vg: vg1
+      lv: lv2
+      size: 1G
+
+  - name: lv3 for root
+    lvol:
+      vg: vg1
+      lv: lv3
+      size: 1G
+
+  - name: lv4 DATA for DCVTGBLA
+    lvol:
+      vg: vg1
+      lv: lv4
+      size: 5G
+
+  - name: lv5 LOGS for DCVTGBLA
+    lvol:
+      vg: vg1
+      lv: lv5
+      size: 2G
+  
+  - name: Create Folder
+    file:
+      path: /busdata
+      owner: root
+      group: root
+      mode: 0755
+      state: directory
+
+  - name: Create Folder
+    file:
+      path: /busapps
+      owner: root
+      group: root
+      mode: 0755
+      state: directory
+
+  - name: Create Folder /busapps/dcvt/1.0 DCVTGBLA
+    file:
+      path: /busapps/dcvt/1.0
+      owner: DCVTGBLA
+      group: DCVTGBLA
+      mode: 0755
+      state: directory
+
+  - name: Create Folder /busdata/dcvt/1.0/data DCVTGBLA
+    file:
+      path: /busdata/dcvt/1.0/data
+      owner: DCVTGBLA
+      group: DCVTGBLA
+      mode: 0755
+      state: directory
+
+  - name: Create Folder /busdata/dcvt/1.0/logs DCVTGBLA
+    file:
+      path: /busdata/dcvt/1.0/logs
+      owner: DCVTGBLA
+      group: DCVTGBLA
+      mode: 0755
+      state: directory
+ 
+  - name: FS for lv1
+    filesystem:
+      fstype: ext4
+      dev: /dev/vg1/lv1
+  
+  - name: FS for lv2
+    filesystem:
+      fstype: ext4
+      dev: /dev/vg1/lv2
+
+  - name: FS for lv3
+    filesystem:
+      fstype: ext4
+      dev: /dev/vg1/lv3
+
+  - name: FS for lv4
+    filesystem:
+      fstype: ext4
+      dev: /dev/vg1/lv4
+
+  - name: FS for lv5
+    filesystem:
+      fstype: ext4
+      dev: /dev/vg1/lv5
+  
+  - name: mount lv1 logical volumes
+    mount:
+      src: /dev/vg1/lv1
+      fstype: ext4
+      state: mounted
+      path: /busapps
+  
+  - name: mount lv2 logical volumes
+    mount:
+      src: /dev/vg1/lv2
+      fstype: ext4
+      state: mounted
+      path: /busapps/dcvt/1.0
+
+  - name: mount lv3 logical volumes
+    mount:
+      src: /dev/vg1/lv3
+      fstype: ext4
+      state: mounted
+      path: /busdata
+
+  - name: mount lv4 logical volumes
+    mount:
+      src: /dev/vg1/lv4
+      fstype: ext4
+      state: mounted
+      path: /busdata/dcvt/1.0/data
+      
+  - name: mount lv5 logical volumes
+    mount:
+      src: /dev/vg1/lv5
+      fstype: ext4
+      state: mounted
+      path: /busdata/dcvt/1.0/logs
+

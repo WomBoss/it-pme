@@ -1,0 +1,11 @@
+---
+- name: affiche un hello en fonction des paramètres d'entrés
+  hosts: local
+  become: true
+  
+  tasks:
+   - name: list toto
+     debug: 
+       msg: "filter1.yml{{filter1.yml}}"
+     with_lines: cat /home/frank/toto.txt
+

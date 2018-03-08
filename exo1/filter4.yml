@@ -1,0 +1,15 @@
+---
+- name: affiche un hello en fonction des paramètres d'entrés
+  hosts: france
+  become_method: sudo
+ 
+  tasks:
+ 
+  - name: Display hashed value  
+    debug: msg={{'frank' | hash('sha512')}}
+   
+  - name: Display checksum value
+    debug: msg={{'frank' |checksum}}
+
+  - name: Display password hashed value
+    debug: msg={{'frank' | password_hash('sha512')}}  

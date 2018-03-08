@@ -1,0 +1,10 @@
+---
+- name: variable test 
+  hosts: frontgroup
+  tasks:
+  - name: whoami
+    command: whoami
+    register: login  
+  - name: affiche le resultat dans une variable 
+    debug: var=login
+

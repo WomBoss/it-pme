@@ -1,0 +1,15 @@
+---
+- name: update system
+  yum:
+    name: '*'
+    state: lastest
+
+- name: install httpd
+  yum:
+    name: httpd
+    state: latest
+
+- name: enable httpd auto start
+  service:
+    name: httpd
+    enabled: yes

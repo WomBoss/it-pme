@@ -1,0 +1,7 @@
+---
+- name: installation httpd 
+  hosts: frontgroup
+  become_user: frank
+  become_method: sudo
+  roles:
+    - httpd

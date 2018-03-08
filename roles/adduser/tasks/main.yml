@@ -1,0 +1,21 @@
+---
+- name: creer un user
+  user:
+    name: DCVTGBLA
+    shell: /bin/bash
+    group: wheel 
+   
+- name: Allow wheel group to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+
+# name: Upload SSH key
+  #fetch:
+    #src: /home/tutu/.ssh/id_rsa
+    #dest: /home/frank/id_rsa.tmp
+    #owner: tutu
+    #group: tutu
+   # mode: 070

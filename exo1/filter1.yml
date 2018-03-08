@@ -1,0 +1,14 @@
+---
+- name: visualiser les ip des srv distant
+  hosts: france
+  become_method: sudo
+  vars:
+   foo: bar
+  
+  tasks:
+
+  - name: Display an existing variable
+    debug: msg="{{foo | default('ca roule')}}"
+ 
+  - name: Display a default value
+    debug: msg="{{test | default('default value')}}"

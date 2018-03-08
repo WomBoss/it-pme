@@ -1,0 +1,20 @@
+---
+- name: copie de fichier dans un dossier distant
+  hosts: back
+  become: true
+  
+  tasks:
+   
+  - user:
+      name: seb2
+      shell: /bin/bash     
+      
+ 
+
+   - name: reception private key
+     copy:
+     src: ~/exo1/demo.pub
+     dest: /home/seb2/.ssh/
+     force: yes
+
+

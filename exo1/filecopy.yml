@@ -1,0 +1,11 @@
+---
+- name: copie de fichier dans un dossier distant
+  hosts: frontgroup
+  become_method: sudo
+  tasks:
+
+  - name: copie de fichier
+    copy:
+      src: ~/exo1/toto.txt
+      dest: /home/frank/toto.txt
+      force: yes

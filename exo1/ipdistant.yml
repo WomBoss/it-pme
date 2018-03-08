@@ -1,0 +1,10 @@
+---
+- name: visualiser les ip des srv distant
+  hosts: france
+  become_method: sudo
+  tasks:
+
+  - name: affiche les ip des serveurs distants.
+    #debug: var=hostvars['address']
+    debug: var=hostvars[inventory_hostname]['ansible_default_ipv4']['address'] 
+    
