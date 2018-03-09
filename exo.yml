@@ -5,9 +5,9 @@
  #strategy: debug
   roles:
     - adduser
-    #- lvm 
-    #- java   
-    #- tomcat
+   #- lvm 
+    - java   
+    - tomcat
 
 - name: install mysql backend
   hosts: back    
@@ -33,4 +33,4 @@
     when: ansible_os_family == "RedHat"
 
   roles:
-     #- mysql
+     - mysql

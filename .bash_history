@@ -1,194 +1,3 @@
-vi filter7.yml
-ansible-playbook -i anshost.ini filter7.yml
-vi filter7.yml
-ansible-playbook -i anshost.ini filter7.yml
-vi filter7.yml
-ansible-playbook -i anshost.ini filter7.yml
-vi filter7.yml
-ansible-playbook -i anshost.ini filter7.yml
-vi filter7.yml
-ansible-playbook -i anshost.ini filter7.yml
-vi filter7.yml
-ansible-playbook -i anshost.ini filter7.yml
-vi filter7.yml
-vi update1.yml
-cp filter6.yml update1.yml
-vi update1.yml
-ansible-playbook -i anshost.ini upgrade1.yml
-ll
-ansible-playbook -i anshost.ini updade1.yml
-ansible-playbook -i anshost.ini update1.yml
-vi update1.yml
-ansible-playbook -i anshost.ini update1.yml
-vi update1.yml
-ansible-playbook -i anshost.ini update1.yml
-vi update1.yml
-ansible-playbook -i anshost.ini update1.yml
-vi update1.yml
-ansible all -i anshost.ini -m setup
-vi update1.yml
-ansible-playbook -i anshost.ini update1.yml
-vi update1.yml
-ansible-playbook -i anshost.ini update1.yml
-vi update1.yml
-ansible-playbook -i anshost.ini update1.yml
-cp update1.yml update2.yml
-ll
-vi update.yml
-vi update2.yml
-cp update1.yml ipv4prop.yml
-vi ipv4prop.yml
-ansible-playbook -i anshost.ini ipv4prop.yml
-vi ipv4prop.yml
-ansible-playbook -i anshost.ini ipv4prop.yml
-vi ipv4prop.yml
-exit
-cleal
-clear
-ll
-cd exi1
-cd exo1
-ll
-cat localfact.yml
-ll
-cd exo&
-cd exo1
-ll
-rm *.retry
-ll
-ll > toto.txt
-cp ipv4prop.yml loop1.yml
-ll
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-ll
-vi localfact.yml
-ansible-playbook -i anshost.ini localfact.yml
-ansible-playbook -i anshost.ini loop1.yml
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-vi toto.txt
-ansible-playbook -i anshost.ini localfact.yml
-vi localfact.yml
-cp localfact.yml filecopy.yml
-vi toto.txt
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-vi localfact.yml
-ansible-playbook -i anshost.ini localfact.yml
-ll
-ansible-playbook -i anshost.ini loop1.yml
-vi loop1.yml
-ll
-ansible-playbook -i anshost.ini loop1.yml
-vi filecopy.yml
-ansible-playbook -i anshost.ini filecopy.yml
-vi filecopy.yml
-ansible-playbook -i anshost.ini filecopy.yml
-ansible-playbook -i anshost.ini loop1.yml
-ll
-vi anshost.ini
-ansible-playbook -i anshost.ini loop1.yml
-vi loop1.yml
-ansible-playbook -i anshost.ini filecopy.yml
-vi filecopy.yml
-vi loop1.yml
-ansible-playbook -i anshost.ini loop1.yml
-cp filecopy.yml loopcopy.yml
-vi loopcopy
-vi loopcopy.yml
-vi loopcopy2.yml
-rm loopcopy2.yml
-vi loopcopy2.yml
-rm loopcopy2.yml
-vi loopcopy2.yml
-vi loopcopy
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi filecopy.yml
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi loopcopy.yml
-vi loopcopy2.yml
-ansible-playbook -i anshost.ini loopcopy2.yml
-ll
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-vi loopcopy.yml
-ansible-playbook -i anshost.ini loopcopy.yml
-ll
-vi filecopy.yml
-cat anshost.ini
-ssh frank@back-vm1.westeurope.cloudapp.azure.com
-ll
-ls -all
-rm *.retry
-rm *.swp
-rm *.yml.swp
-ll
-vi loopcopy.yml
-ssh key-gen
-sshkey-gen
-sshkey
-ssh 
-sshkey
-ssh-key
-clear
-ssh keygen
-ssh-keygen
-ll
-cat demo.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJrFSSf4oc+1yDZKcBCaqwbIoQgfA6gZGayEJtfvM+Z6jkRj+r0/eKVZ4fQhE3duiYR0qPcsE5VjrA7o29qtrwedoN4AJ7057nElfKv7KjXJG+KosGFC0fajXY7NVJzrrVuHXpVybIAuDDMHpTN7K0yAfUQEvbegfJqehC/X7TLz6JwKo4zhe8LgVkT3X9vXFcq8GJb1ldEVvEGr1u52j7SonlmiZ7bVSrwRg1kd7TF185juAYoUNkRdYP9kJ/ofmy1JEId5FVGAE+XOIbrCdyrh2L1cqExS3z88gilFuz9uEp8XK66PuqMLZprqiQAjDXyD09gYe5xTzvsoIhOc5v frank@vm-ans001
-ll
-rm loopcopy2.yml
-vi loop1.yml
-cp loop1.yml lookup1.yml
-ll
-vi lookup1.yml
-ansible
-ansible - all -m setup
-ansible all -m setup
-ansible localhost -m setup
-ansible local -m setup
-ansible localhost -m setup
-ansible localhost -m setup >localfacts.txt
-cat localfact
-cat localfact.txt
-ll
-cat localfacts.txt
-vi lookup1.yml
-ansible-playbook -i localhost lookup1.yml
-ansible-playbook -i local lookup1.yml
-ll
-ansible-playbook -i anshost.ini lookup1.yml
-vi lookup1.yml
-ansible-playbook -i "localhost," lookup1.yml
-ansible-playbook -i "localhost," -c local lookup1.yml
-ansible-playbook -i "localhost," lookup1.yml
-cd ..
-ll
-cd /etc/ansible
-ll
-vi hosts
-sudo vi hosts
-ll
-cd /home/frank/exo1
-ll
-ansible-playbook lookup1.yml
 vi lookup1.yml
 ansible-playbook lookup1.yml
 vi lookup1.yml
@@ -998,3 +807,194 @@ ansible-playbook -i anshost.ini exo.yml
 ssh frank@front-vm-2.westeurope.cloudapp.azure.com
 ll
 ssh frank@front-vm-2.westeurope.cloudapp.azure.com
+cd ..
+ll
+cd frank
+ll
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+systemctl status mysql
+mysql
+Mysql
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+cd tomcat
+ll
+cd roles
+cd tomcat
+ll
+cd templates
+ll
+vi tomcat.service.j2 
+systemctl start tomcat
+sudo systemctl start tomcat
+sudo systemctl start tomcat.service
+clear
+ll
+cd ..
+ll
+cd ..
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ll
+git init
+ll
+ls -al
+ll
+git commit -m "fist commit"
+git config --global user.email "frank@wom.fr"
+git config --global user.name snioup
+git commit -m "fist commit"
+git remote add origin git@github.com:snioup/it-pme.git
+git push -u origin master
+git add
+git add .
+git push -u origin master
+git add .
+git commit -m "fist commit"
+git push -u origin master
+cd roels
+cd roles
+ll
+cd mysql
+ll
+cd defaults/
+vi main.yml
+cd..
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+vi exo.yml
+ansible-playbook -i anshost.ini exo.yml
+cd roles
+cd mysql
+cd defaults/
+vi main.yml
+cd roles
+cd tomcat
+ll
+cd vars
+ll
+vi main.yml
+ansible-playbook -i anshost.ini exo.yml
+cd ..
+cd //
+cd home
+ll
+cd frank
+ll
+ansible-playbook -i anshost.ini exo.yml
+sudo yum -y yum-utils device-mapper-persistent-data lvm2
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-nanager -add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum-config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum -config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum-config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum-config-nanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+Classer ce message dans la catégorie :
+Ne plus afficher ce message
+Bonjour M. CLIMENT,
+ 
+J'ai bien reçu votre mail.
+En effet, nous étions informées de votre absence lors de la réunion du 25/01 à Pontaumur.
+Vous serez donc convoqué à la prochaine réunion qui aura lieu le jeudi 22/03 à Pontaumur, vous recevrez un courrier une quinzaine de jours avant.
+ 
+Je reste à votre disposition pour tous renseignements complémentaires.
+
+Bien cordialement,
+ 
+Delphine LOUIS
+Secrétaire RSA / Unité Territoriale
+Unité Territoriale St Eloy les Mines
+Circonscription médico-sociale des Combrailles
+Direction de l'Action Sociale Territorialisée et de l'Insertion - Lutte Contre les Exclusions
+ 
+04 73 85 31 20
+delphine.louis@puy-de-dome.fr
+ 
+CONSEIL DEPARTEMENTAL DU PUY-DE-DÔME
+Hôtel du Département
+24 rue Saint-Esprit
+63033 Clermont-Ferrand Cedex 1
+ 
+
+
+clear
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+sudo systemctl start docker
+ll
+sudo usermod -aG docker <username>
+sudo usermod -aG docker frank
+systemctl enable docker.service
+sudo systemctl enable docker.service
+ll
+docker search httpd
+docker pull prestashop/prestashop
+ll
+docker image
+docker images
+docker pull centos
+docker pull centos:6.9
+docker images
+docker
+docker images
+docker pull ylesaout/busibox
+t/busibox
+docker pull busybox
+docker images
+clear
+docker run centos
+docker run centos echo "hello world"
+docker run ubuntu echo "hello world"
+docker run ubuntu ps
+docker pps -a
+docker ps -a
+docker ps 
+docker prestashop
+docker run prestashop
+docker image
+docker images
+
+
+docker ru -it centos bash
+docker run -it centos bash
+docker images
+docker ps

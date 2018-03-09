@@ -1,0 +1,5 @@
+# wget image
+FROM centos:latest
+#RUN yum install -y wget
+CMD ping 127.0.0.1 -c 30
+
